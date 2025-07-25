@@ -25,6 +25,9 @@ SECRET_KEY = 'django-insecure-9iohw*5)#3_x()q-#(pple!+8)x!hhxeudz&ea#qqhx%o6fh+r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+INTERNAL_IPS = ['127.0.0.1']
+
+
 ALLOWED_HOSTS = []
 
 
@@ -53,6 +56,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
