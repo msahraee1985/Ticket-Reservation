@@ -1,0 +1,65 @@
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+
+# VS Code settings
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Env config
+.env
+.env.*
+
+# Migrations (اختیاری)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+.cache
+
+# MyPy / Pyright
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Pytest
+.pytest_cache/
+
+# Pycharm / Jetbrains
+.idea/
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Node/npm if you use frontend
+node_modules/
+*.tsbuildinfo
