@@ -43,6 +43,10 @@ INSTALLED_APPS = [
     'markdownx',
     'debug_toolbar',
 
+    'bookings',
+    'users',
+    'transport',
+
 ]
 
 MIDDLEWARE = [
