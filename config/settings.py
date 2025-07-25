@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'django_filters',
-    'markdownx',
+    'markdown',
     'debug_toolbar',
 
     'bookings',
@@ -84,8 +84,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Ticket-Reservation',           # اسم دیتابیس
+        'USER': 'postgres',         
+        'PASSWORD': 'admin',   
+        'HOST': 'localhost',     
+        'PORT': '5432',               
     }
 }
 
