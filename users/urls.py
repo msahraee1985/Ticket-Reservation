@@ -4,7 +4,7 @@ from .views import RegisterView, CreateStaffUserView
 
 urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),
-    path('create-staff/', CreateStaffUserView.as_view(), name='create-staff'),
+    path('create-staff/', CreateStaffUserView.as_view(), name='create_staff'),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
