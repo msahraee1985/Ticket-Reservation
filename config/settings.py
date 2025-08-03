@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django_filters',
     'markdown',
     'debug_toolbar',
+    'django_extensions',
 
     'bookings',
     'users',
