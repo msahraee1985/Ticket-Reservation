@@ -14,7 +14,7 @@ class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
         fields = ['id', 'user', 'transport', 'seat_number', 'booking_date', 'status', 'total_price']
-        read_only_fields = ['booking_date', 'status']  # وضعیت در API دستی تغییر نمی‌کنه
+        read_only_fields = ['booking_date', 'status', 'created_at']  # وضعیت در API دستی تغییر نمی‌کنه
 
     def validate(self, attrs):
         transport = attrs.get('transport')

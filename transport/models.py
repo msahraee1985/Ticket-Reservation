@@ -13,6 +13,7 @@ class Transport(models.Model):
   arrival_date_time = models.DateTimeField()
   departure_date_time = models.DateTimeField()
   price = models.DecimalField(max_digits=10, decimal_places=2)
+  capacity = models.PositiveIntegerField()
 
   class Meta:
     # db_table = 'transport' — use this if a custom DB table name is needed; for now, the default is <app_name>_<model_name>
