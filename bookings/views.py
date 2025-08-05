@@ -9,5 +9,7 @@ class BookingViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         # فقط رزروهای خود کاربر
-        return self.queryset.filter(user=self.request.user)
-
+        return self.queryset.filter(
+            user=self.request.user,
+            status='active'
+            ).select_related('transport').order_by('transport__departure_date_time')
