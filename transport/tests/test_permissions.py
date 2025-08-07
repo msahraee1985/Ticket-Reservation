@@ -28,6 +28,7 @@ class TransportPermissionsTest(APITestCase):
       "transport_type": "bus",
       "arrival_date_time": "2025-08-15T10:00:00Z",
       "departure_date_time": "2025-08-16T10:00:00Z",
+      "capacity": 40
     }
 
   def authenticate(self, user):
